@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS College of Commerce & Management</title>
+    <link rel="stylesheet" href="HOME.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="BMS College Logo">
+            <div>
+                <h1>BMS College of Commerce & Management (BMSCCM)</h1>
+                <p>Email: principal.bmsccm@gmail.com</p>
+                <p>UG admissions open for the AY 2024-2025!</p>
+                <p>Call Us: 080-26610174</p>
+                <p>B.com and BCA admissions are closed for the AY-2024-2025!</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES OFFERED</a></li>
+            <li><a href="faculty.html">FACULTY</a></li>
+        </ul>
+    </nav>
+
+    <div class="carousel">
+        <img src="carousel1.jpg" alt="Carousel Image 1" class="active">
+        <img src="carousel2.jpg" alt="Carousel Image 2">
+        <img src="carousel3.jpg" alt="Carousel Image 3">
+    </div>
+
+    <main>
+        <div class="main-content">
+            <section class="courses">
+                <h2>Courses Offered</h2>
+                <ul class="course-list">
+                    <li>Bachelor of Commerce (B.Com.)</li>
+                    <li>Bachelor of Business Administration (BBA)</li>
+                    <li>Bachelors of Computer Application (BCA)</li>
+                    <li>Bachelor of Commerce-Data Analytics</li>
+                    <li>Weekend Executive Management Program</li>
+                    <li>CA/CS/CMA(ICWA) Coaching Classes</li>
+                    <li>Skill Enhancement Courses</li>
+                </ul>
+                <a href="courses.html"><button class="attractive-button">View More</button></a> <!-- Button to redirect to Courses page -->
+            </section>
+    
+            <section class="about">
+                <h2>About BMS College of Commerce & Management</h2>
+                <p>B.M.S. College of Commerce & Management (BMSCCM) is run under the aegis of BMS Educational Trust, Bengaluru.The college is affiliated to Bangalore City University, Bengaluru and offers programs as per the prescribed syllabus of the university.BMSCCM is centrally located in the verdant green environs of V.V Puram, Basavanagudi Bengaluru.</p>
+                <a href="about.html"><button class="attractive-button">Read More</button></a> <!-- Button to redirect to About page -->
+            </section>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <section class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Application Downloads</a></li>
+                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="#">Fee Details</a></li>
+                    <li><a href="#">Calendar</a></li>
+                </ul>
+            </section>
+
+            <section class="useful-pages">
+                <h2>Useful Pages</h2>
+                <ul>
+                    <li><a href="#">Admission Procedure</a></li>
+                    <li><a href="#">Instructions to student</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </section>
+
+            <section class="contact-info">
+                <h2>Contact Us</h2>
+                <p>BMS COLLEGE OF COMMERCE & MANAGEMENT</p>
+                <p>No-97, Kavi Lakshmisha Road, V.V. Puram, Bangalore - 560 004 Karnataka, India.</p>
+                <p>080-26610174 / 91 96202 25400-03</p>
+                <p>Email: principal.bmsccm@gmail.com | principal@bmsccm.ac.in</p>
+                <p>© @BMSCCM, All Right Reserved.</p>
+            </section>
+        </div>
+        <p>Designed By Advaita Service</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
